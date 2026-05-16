@@ -1,10 +1,15 @@
+import { lazy, Suspense } from "react";
 import "./styles/Landing.css";
+
+const InsightScene = lazy(() => import("./InsightScene"));
 
 const Landing = () => {
   return (
     <section className="landing-section" id="home">
       <div className="landing-container">
-        <p className="landing-kicker">Psychology | Consumer Behavior | User Research</p>
+        <p className="landing-kicker">
+          Psychology | Consumer Behavior | User Research
+        </p>
         <div className="landing-grid">
           <div className="landing-intro">
             <h1>Abhipsa Satpathy</h1>
@@ -23,9 +28,15 @@ const Landing = () => {
               </a>
             </div>
           </div>
+          <Suspense fallback={<div className="insight-scene-fallback" />}>
+            <InsightScene />
+          </Suspense>
           <aside className="landing-profile" aria-label="Career snapshot">
             <figure className="resume-preview">
-              <img src="/images/abhipsa-cv-preview.png" alt="Abhipsa Satpathy CV preview" />
+              <img
+                src="/images/abhipsa-cv-preview.png"
+                alt="Abhipsa Satpathy CV preview"
+              />
               <figcaption>CV snapshot</figcaption>
             </figure>
             <div>

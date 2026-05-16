@@ -9,6 +9,7 @@ insight work.
 - React
 - TypeScript
 - Vite
+- Three.js
 - CSS
 
 ## Run Locally

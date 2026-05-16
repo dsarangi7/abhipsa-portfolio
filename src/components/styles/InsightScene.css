@@ -1,0 +1,95 @@
+.insight-scene {
+  background:
+    radial-gradient(circle at 30% 18%, rgba(47, 111, 115, 0.25), transparent 28%),
+    radial-gradient(circle at 76% 72%, rgba(138, 79, 125, 0.18), transparent 32%),
+    linear-gradient(145deg, #f8fbfa, #e7efef);
+  border: 1px solid rgba(47, 111, 115, 0.18);
+  border-radius: 8px;
+  box-shadow: 0 28px 90px rgba(31, 41, 51, 0.1);
+  min-height: 560px;
+  overflow: hidden;
+  position: relative;
+}
+
+.insight-scene canvas {
+  display: block;
+  height: 100%;
+  inset: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.insight-scene::before {
+  background:
+    linear-gradient(rgba(47, 111, 115, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(47, 111, 115, 0.06) 1px, transparent 1px);
+  background-size: 34px 34px;
+  content: "";
+  inset: 0;
+  mask-image: radial-gradient(circle at center, black, transparent 74%);
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.insight-scene::after {
+  background: linear-gradient(
+    180deg,
+    rgba(246, 247, 249, 0),
+    rgba(246, 247, 249, 0.62)
+  );
+  bottom: 0;
+  content: "";
+  height: 36%;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+
+.insight-scene-label {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(47, 111, 115, 0.16);
+  border-radius: 8px;
+  color: var(--accentColor);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0;
+  padding: 8px 10px;
+  position: absolute;
+  text-transform: uppercase;
+  z-index: 3;
+}
+
+.label-behavior {
+  left: 11%;
+  top: 19%;
+}
+
+.label-research {
+  right: 12%;
+  top: 32%;
+}
+
+.label-insight {
+  bottom: 18%;
+  left: 18%;
+}
+
+@media only screen and (max-width: 900px) {
+  .insight-scene {
+    min-height: 420px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .insight-scene {
+    min-height: 340px;
+  }
+
+  .label-research {
+    right: 8%;
+  }
+}
