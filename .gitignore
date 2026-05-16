@@ -32,3 +32,4 @@ test.js
 
 backup/
 .env
+.vercel
