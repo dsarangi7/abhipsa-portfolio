@@ -1,0 +1,28 @@
+.about-section {
+  padding: 90px 0;
+}
+
+.about-me {
+  max-width: 880px;
+}
+
+.about-me h2 {
+  margin-bottom: 24px;
+}
+
+.about-me .para {
+  color: var(--mutedColor);
+  font-size: 22px;
+  line-height: 1.6;
+  margin: 0 0 18px;
+}
+
+@media only screen and (max-width: 760px) {
+  .about-section {
+    padding: 60px 0;
+  }
+
+  .about-me .para {
+    font-size: 18px;
+  }
+}

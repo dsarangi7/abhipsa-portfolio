@@ -1,0 +1,61 @@
+.education-section {
+  padding: 90px 0;
+}
+
+.education-list {
+  display: grid;
+  gap: 18px;
+}
+
+.education-card {
+  align-items: center;
+  background: var(--surfaceColor);
+  border: 1px solid var(--borderColor);
+  border-radius: 8px;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding: 28px;
+}
+
+.education-card h3 {
+  color: var(--textColor);
+  font-size: 24px;
+  font-weight: 650;
+  line-height: 1.2;
+  margin: 0 0 8px;
+}
+
+.education-card p {
+  color: var(--mutedColor);
+  font-size: 17px;
+  margin: 0;
+}
+
+.education-meta {
+  color: var(--mutedColor);
+  display: grid;
+  gap: 8px;
+  justify-items: end;
+  min-width: 130px;
+}
+
+.education-meta strong {
+  color: var(--accentColor);
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 760px) {
+  .education-section {
+    padding: 60px 0;
+  }
+
+  .education-card {
+    grid-template-columns: 1fr;
+    padding: 22px;
+  }
+
+  .education-meta {
+    justify-items: start;
+  }
+}

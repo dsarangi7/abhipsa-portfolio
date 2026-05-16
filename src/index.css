@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+
+:root {
+  --accentColor: #2f6f73;
+  --accentSoftColor: #dff0ee;
+  --backgroundColor: #f6f7f9;
+  --borderColor: #d9e0e7;
+  --mutedColor: #5f6f7b;
+  --secondaryColor: #8a4f7d;
+  --surfaceColor: #ffffff;
+  --textColor: #1f2933;
+  color: var(--textColor);
+  background: var(--backgroundColor);
+  font-family: "Geist", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  font-synthesis: none;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background:
+    linear-gradient(rgba(31, 41, 51, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(31, 41, 51, 0.04) 1px, transparent 1px),
+    var(--backgroundColor);
+  background-size: 44px 44px;
+  margin: 0;
+  min-width: 320px;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accentColor);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  letter-spacing: 0;
+}
+
+main {
+  min-height: 100vh;
+}
